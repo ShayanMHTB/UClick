@@ -1,0 +1,7 @@
+{
+  "name": "UClick",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
