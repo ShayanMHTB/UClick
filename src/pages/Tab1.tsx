@@ -1,4 +1,5 @@
 import {
+  IonButton,
   IonContent,
   IonHeader,
   IonPage,
@@ -13,7 +14,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab One - You Are Here!</IonTitle>
+          <IonTitle>UCLick</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
