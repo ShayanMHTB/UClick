@@ -31,10 +31,10 @@ For detailed setup instructions, see [docs/SETUP.md](docs/SETUP.md)
 
 ## 🏗️ Tech Stack
 
-- **Frontend**: Ionic + React + Framework7
+- **Frontend**: Ionic + React + Tailwindcss
 - **Backend**: Supabase (PostgreSQL, Auth, Real-time)
 - **Mobile**: Capacitor for native functionality
-- **UI**: Framework7 Material Design components
+- **UI**: Tailwindcss
 
 ## 📚 Documentation
 

@@ -14,12 +14,6 @@ UClick follows a modern mobile-first architecture using a Backend-as-a-Service (
 - Single codebase for iOS, Android, and Progressive Web App
 - React for component-based UI development and state management
 
-**Framework7**
-
-- Material Design components for native mobile feel
-- Pre-built responsive screens and UI elements
-- Consistent design system across platforms
-
 **Capacitor**
 
 - Native mobile API access (Camera, GPS, Push Notifications)
@@ -233,13 +227,6 @@ ionic.config.json       # Ionic configuration
 - Built-in authentication and real-time features
 - PostgreSQL reliability and SQL familiarity
 - Excellent developer experience
-
-### Why Framework7?
-
-- Mobile-first design components
-- Material Design implementation
-- Consistent UI across platforms
-- Reduced custom CSS requirements
 
 ## Future Architecture Considerations
 
