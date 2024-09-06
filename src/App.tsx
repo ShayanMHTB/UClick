@@ -1,6 +1,8 @@
 // UClick/src/App.tsx
 
 import React from 'react';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -38,11 +40,16 @@ import '@/theme/variables.css';
 /* Components */
 import AppTabs from '@/components/layout/AppTabs';
 import { ThemeProvider } from '@/contexts/ThemeContext';
+import { queryClient } from '@/services/queryClient';
 
 const App: React.FC = () => (
-  <ThemeProvider>
-    <AppTabs />
-  </ThemeProvider>
+  <QueryClientProvider client={queryClient}>
+    <ThemeProvider>
+      <AppTabs />
+    </ThemeProvider>
+    {/* React Query Devtools - only shows in development */}
+    <ReactQueryDevtools initialIsOpen={false} />
+  </QueryClientProvider>
 );
 
 export default App;
