@@ -31,7 +31,10 @@ export const Button: React.FC<ButtonProps> = ({
   type = 'button',
 }) => {
   // Map our variants to Ionic button props
-  const getIonicProps = () => {
+  const getIonicProps = (): {
+    fill: 'solid' | 'outline' | 'clear';
+    color: string;
+  } => {
     switch (variant) {
       case 'primary':
         return { fill: 'solid', color: 'primary' };
@@ -84,7 +87,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <IonButton
       {...ionicProps}
-      size={size}
+      size={size === 'medium' ? 'default' : size}
       expand={fullWidth ? 'block' : undefined}
       disabled={disabled || loading}
       onClick={handleClick}
