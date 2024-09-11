@@ -137,6 +137,3 @@ export const CardSubtitle: React.FC<CardSubtitleProps> = ({
     </IonCardSubtitle>
   );
 };
-
-// Export all components
-export { CardHeader, CardContent, CardTitle, CardSubtitle };
